@@ -16,7 +16,7 @@ public class Main {
 			Integer port = 8080;
 			Tomcat tomcat = new Tomcat();
 			Context ctxt = tomcat.addContext("/", System.getProperty("user.dir"));
-			String webService = "http://localhost:8085/test";
+			String webService = "http://localhost:8090/test";
 			tomcat.setPort(port);
 			
 			tomcat.addWebapp("/App", System.getProperty("user.dir") +"\\" +"WebContent");

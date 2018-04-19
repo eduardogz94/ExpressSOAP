@@ -19,7 +19,7 @@ public class Servlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	try {
-    		URL url = new URL("http://localhost:8085/test?wsdl");
+    		URL url = new URL("http://localhost:8090/test?wsdl");
     		QName qname = new QName("http://org.eagz/", "ServiceService");
     		Service service = Service.create(url, qname);
     		ServiceInterface server = service.getPort(ServiceInterface.class);
